@@ -147,15 +147,13 @@ export default function Home() {
               transform: "translateY(-50%)",
             }}
           >
-            <div className="w-[380px] origin-top-left">
-              <div
-                className="transform scale-[0.85] origin-top-left"
-                style={{
-                  filter: "drop-shadow(0 25px 50px rgba(0, 0, 0, 0.15))",
-                }}
-              >
-                <hoveredDesign.PreviewComponent />
-              </div>
+            <div
+              className="rounded-2xl overflow-hidden"
+              style={{
+                filter: "drop-shadow(0 25px 50px rgba(0, 0, 0, 0.2))",
+              }}
+            >
+              <hoveredDesign.PreviewComponent />
             </div>
           </motion.div>
         )}
