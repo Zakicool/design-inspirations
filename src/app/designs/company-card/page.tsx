@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, ViewTransition } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { DM_Sans } from "next/font/google";
@@ -388,48 +388,56 @@ export default function CompanyCardPage() {
       {/* Split layout */}
       <div className="flex flex-col md:flex-row min-h-screen pt-[57px]">
         {/* Light mode side */}
-        <div className="flex-1 bg-[#f5f5f5] relative">
-          {/* Light dot grid */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `radial-gradient(circle, #d4d4d4 1px, transparent 1px)`,
-              backgroundSize: "24px 24px",
-            }}
-          />
-          <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-57px)] p-6 md:p-12">
-            <div className="mb-4 text-center">
-              <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">
-                Light Mode
-              </span>
-            </div>
-            <div className="w-full max-w-md">
-              <CompanyCardLight />
+        <ViewTransition name="company-card-light-panel">
+          <div className="flex-1 bg-[#f5f5f5] relative">
+            {/* Light dot grid */}
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `radial-gradient(circle, #d4d4d4 1px, transparent 1px)`,
+                backgroundSize: "24px 24px",
+              }}
+            />
+            <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-57px)] p-6 md:p-12">
+              <div className="mb-4 text-center">
+                <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">
+                  Light Mode
+                </span>
+              </div>
+              <ViewTransition name="company-card-light">
+                <div className="w-full max-w-md">
+                  <CompanyCardLight />
+                </div>
+              </ViewTransition>
             </div>
           </div>
-        </div>
+        </ViewTransition>
 
         {/* Dark mode side */}
-        <div className="flex-1 bg-zinc-950 relative">
-          {/* Dark dot grid */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `radial-gradient(circle, #3f3f46 1px, transparent 1px)`,
-              backgroundSize: "24px 24px",
-            }}
-          />
-          <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-57px)] p-6 md:p-12">
-            <div className="mb-4 text-center">
-              <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">
-                Dark Mode
-              </span>
-            </div>
-            <div className="w-full max-w-md">
-              <CompanyCardDark />
+        <ViewTransition name="company-card-dark-panel">
+          <div className="flex-1 bg-zinc-950 relative">
+            {/* Dark dot grid */}
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `radial-gradient(circle, #3f3f46 1px, transparent 1px)`,
+                backgroundSize: "24px 24px",
+              }}
+            />
+            <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-57px)] p-6 md:p-12">
+              <div className="mb-4 text-center">
+                <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">
+                  Dark Mode
+                </span>
+              </div>
+              <ViewTransition name="company-card-dark">
+                <div className="w-full max-w-md">
+                  <CompanyCardDark />
+                </div>
+              </ViewTransition>
             </div>
           </div>
-        </div>
+        </ViewTransition>
       </div>
     </div>
   );
