@@ -16,6 +16,7 @@ import {
   ChevronDown,
   ArrowLeft,
   ExternalLink,
+  Code,
 } from "lucide-react";
 
 const dmSans = DM_Sans({
@@ -365,23 +366,34 @@ export default function CompanyCardPage() {
               Company Info Card
             </h1>
           </div>
-          <a
-            href="https://x.com/disarto_max"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-700 transition-colors"
-          >
-            <span className="hidden sm:inline text-zinc-400">Inspired from</span>
-            <Image
-              src="https://unavatar.io/x/disarto_max"
-              alt="Maxim Kuznetsov"
-              width={24}
-              height={24}
-              className="w-6 h-6 rounded-full"
-            />
-            <span className="font-medium text-zinc-700">@disarto_max</span>
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://github.com/ainergiz/design-inspirations/blob/main/src/app/designs/company-card/page.tsx"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 text-sm text-zinc-500 hover:text-zinc-700 hover:bg-zinc-100 rounded-lg transition-colors"
+            >
+              <Code className="w-4 h-4" />
+              <span className="hidden sm:inline">Code</span>
+            </a>
+            <a
+              href="https://x.com/disarto_max"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-700 transition-colors"
+            >
+              <span className="hidden sm:inline text-zinc-400">Inspired from</span>
+              <Image
+                src="https://unavatar.io/x/disarto_max"
+                alt="Maxim Kuznetsov"
+                width={24}
+                height={24}
+                className="w-6 h-6 rounded-full"
+              />
+              <span className="font-medium text-zinc-700">@disarto_max</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
         </div>
       </header>
 
@@ -399,11 +411,6 @@ export default function CompanyCardPage() {
               }}
             />
             <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-57px)] p-6 md:p-12">
-              <div className="mb-4 text-center">
-                <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">
-                  Light Mode
-                </span>
-              </div>
               <ViewTransition name="company-card-light">
                 <div className="w-full max-w-md">
                   <CompanyCardLight />
@@ -425,11 +432,6 @@ export default function CompanyCardPage() {
               }}
             />
             <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-57px)] p-6 md:p-12">
-              <div className="mb-4 text-center">
-                <span className="text-xs font-medium text-zinc-500 uppercase tracking-wider">
-                  Dark Mode
-                </span>
-              </div>
               <ViewTransition name="company-card-dark">
                 <div className="w-full max-w-md">
                   <CompanyCardDark />

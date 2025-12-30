@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
 import { CompanyCardPreview } from "@/components/previews/CompanyCardPreview";
 
 // Design data with preview components
@@ -47,12 +47,25 @@ export default function Home() {
     <div className="min-h-screen bg-[#fafafa]" ref={containerRef}>
       {/* Hero section */}
       <div className="max-w-4xl mx-auto px-8 pt-24 pb-16">
-        <h1 className="text-5xl font-semibold tracking-tight text-zinc-900 mb-6">
-          Design Inspirations
-        </h1>
-        <p className="text-zinc-400 text-lg max-w-md leading-relaxed">
-          A curated collection of beautiful UI patterns and components.
-        </p>
+        <div className="flex items-start justify-between gap-8">
+          <div>
+            <h1 className="text-5xl font-semibold tracking-tight text-zinc-900 mb-6">
+              Design Inspirations
+            </h1>
+            <p className="text-zinc-400 text-lg max-w-md leading-relaxed">
+              A curated collection of beautiful UI patterns and components.
+            </p>
+          </div>
+          <a
+            href="https://github.com/ainergiz/design-inspirations"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-zinc-400 hover:text-zinc-600 transition-colors mt-2"
+          >
+            <Github className="w-5 h-5" />
+            <span className="text-sm font-medium hidden sm:inline">GitHub</span>
+          </a>
+        </div>
       </div>
 
       {/* Designs list */}

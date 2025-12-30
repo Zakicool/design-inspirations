@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design Inspirations
 
-## Getting Started
+A curated collection of beautiful UI patterns and components, brought to life from bookmarked designs across the web.
 
-First, run the development server:
+## About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I find myself bookmarking dozens of incredible pages, components, and prototypes every day. This repository brings those designs to life for others to explore, learn from, and use.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Goals
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Appreciate great design** — Showcase exceptional UI work from talented designers
+- **Light & Dark modes** — Every design includes both light and dark variants
+- **Mobile-first** — Alternative layouts for mobile when the design requires it
+- **AI-powered development** — A comprehensive set of frontend [Skills](.claude/skills) to help AI agents create better user interfaces
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Next.js 16** with App Router
+- **React 19** with ViewTransition API
+- **Tailwind CSS v4**
+- **TypeScript**
 
-To learn more about Next.js, take a look at the following resources:
+## Skills for AI Agents
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This repository includes a layered skills system in `.claude/skills/` designed to improve AI-assisted frontend development:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Skill | Purpose |
+|-------|---------|
+| `component-variants` | Foundation for creating light/dark mode component pairs with consistent color token mapping |
+| `expandable-card` | UI pattern for smooth expand/collapse animations using CSS grid-rows |
+| `create-new-design` | Project scaffolding for adding new designs with preview, detail page, and main page entry |
 
-## Deploy on Vercel
+These skills are portable — copy them to your own repositories to enhance AI agent capabilities.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Request a Design
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Have a design you'd love to see brought to life? [Create an issue](https://github.com/ainergiz/design-inspirations/issues/new) with a link or screenshot of the design.
+
+## Contributing
+
+This is a personal project and I'm not accepting contributions at this time. Feel free to fork and adapt for your own use.
+
+## Easter Egg
+
+Check out the smooth page transitions using React 19's experimental [ViewTransition API](https://react.dev/reference/react/ViewTransition) — navigate from the main page to any design to see it in action.
