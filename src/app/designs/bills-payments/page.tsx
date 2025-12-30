@@ -114,8 +114,8 @@ function DropdownMenu({
         onClose();
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
   }, [onClose]);
 
   return (
@@ -174,10 +174,10 @@ function SubscriptionCardLight({
 
   return (
     <div
-      className="rounded-xl border border-zinc-200/80 cursor-pointer overflow-hidden"
+      className={`rounded-xl border border-zinc-200/80 cursor-pointer relative ${menuOpen ? "z-30" : "z-0"}`}
       onClick={onToggle}
     >
-      <div className="bg-white p-4 flex items-center gap-4 rounded-b-xl relative z-10">
+      <div className="bg-white p-4 flex items-center gap-4 rounded-xl relative z-10">
         <DateBadge month={month} day={day} />
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
@@ -188,13 +188,13 @@ function SubscriptionCardLight({
           </div>
           <div className="flex items-center gap-2 mt-1">
             <CategoryBadge category={category} />
-            <div className="flex items-center gap-1 text-zinc-400">
+            <div className="hidden sm:flex items-center gap-1 text-zinc-400">
               <Clock className="w-3.5 h-3.5" strokeWidth={1.5} />
               <span className="text-xs">{date}</span>
             </div>
           </div>
         </div>
-        <div className="text-right">
+        <div className="text-right shrink-0">
           <span className="text-xs text-zinc-400 capitalize">{frequency}</span>
           <p className="text-base font-semibold text-zinc-900">{price}</p>
         </div>
@@ -263,10 +263,10 @@ function SubscriptionCardDark({
 
   return (
     <div
-      className="rounded-xl border border-zinc-700/80 cursor-pointer overflow-hidden"
+      className={`rounded-xl border border-zinc-700/80 cursor-pointer relative ${menuOpen ? "z-30" : "z-0"}`}
       onClick={onToggle}
     >
-      <div className="bg-zinc-800 p-4 flex items-center gap-4 rounded-b-xl relative z-10">
+      <div className="bg-zinc-800 p-4 flex items-center gap-4 rounded-xl relative z-10">
         <DateBadge month={month} day={day} dark />
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
@@ -277,13 +277,13 @@ function SubscriptionCardDark({
           </div>
           <div className="flex items-center gap-2 mt-1">
             <CategoryBadge category={category} dark />
-            <div className="flex items-center gap-1 text-zinc-500">
+            <div className="hidden sm:flex items-center gap-1 text-zinc-500">
               <Clock className="w-3.5 h-3.5" strokeWidth={1.5} />
               <span className="text-xs">{date}</span>
             </div>
           </div>
         </div>
-        <div className="text-right">
+        <div className="text-right shrink-0">
           <span className="text-xs text-zinc-500 capitalize">{frequency}</span>
           <p className="text-base font-semibold text-zinc-100">{price}</p>
         </div>
